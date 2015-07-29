@@ -394,7 +394,7 @@ module ActiveRestClient
         else
           Rails.logger.debug("****** RIK ET ROK ******")
           Rails.logger.debug(v)
-          object._attributes[k] << v
+          object._attributes[k] = v
           Rails.logger.debug("****** CROCO CHOC ******")
           Rails.logger.debug(bject._attributes[k][v] )
         end

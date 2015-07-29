@@ -393,10 +393,11 @@ module ActiveRestClient
           end
         else
           Rails.logger.debug("****** RIK ET ROK ******")
+          Rails.logger.debug(k)
           Rails.logger.debug(v)
           object._attributes[k] = v
           Rails.logger.debug("****** CROCO CHOC ******")
-          Rails.logger.debug(object._attributes[k][v] )
+          Rails.logger.debug(object._attributes[k])
         end
       end
       object.clean! unless object_is_class?

@@ -392,10 +392,8 @@ module ActiveRestClient
             end
           end
         else
-          if v.to_s[/\d{4}\-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})/]
-            Rails.logger.debug("****** RIK ET ROK ******")
-            object._attributes[k] = v
-          else
+          Rails.logger.debug("****** RIK ET ROK ******")
+          Rails.logger.debug(v)
             object._attributes[k] = v
           end
         end

@@ -400,7 +400,7 @@ module ActiveRestClient
           Rails.logger.debug(object._attributes[k])
         end
       end
-      object.clean! unless object_is_class?
+      #object.clean! unless object_is_class?
 
       object
     end
